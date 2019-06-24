@@ -1,0 +1,142 @@
+html, body {
+    background-color: #a9d7d1;  
+    text-align: center;
+    font-family: "Roboto", sans-serif, "tahoma";
+    min-width: 320px;
+}
+
+header {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom:0;
+    color: blue;
+}
+
+header {
+    font-size: 30px;
+}
+
+#userAge {
+    width: 40px;
+  }
+
+@media screen and (max-width: 833px) {
+.input-field {
+    width: 80%;
+}
+select {
+    width: 90%;
+}
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.labels-center {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: center;
+    margin-top: auto;
+}
+
+.userRatings {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+  }
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+.radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+
+
+
+/* ELEMENTS HERE */
+#form-outer{
+    background-color: #676767;
+    margin: 0 auto;
+    border-radius: 30px;
+    width: 80%; /*Width of the form-outer box thing within the constraint */
+    max-width: 900px;
+    padding: 2.5px;
+    padding-top: 2.5px;
+}
+
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;  
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+
+p {
+    font-weight: bold;
+}
+
+.tl { position: absolute; top: 25%; left: 0; right: 50%; bottom: 30%; 
+    background: #DB4437; border:solid #000; border-width: 5px 5px 0 0; }
+.tr { position: absolute; top: 25%; left: 50%; right: 0; bottom: 30%; 
+    background: #4285F4; border:solid #000; border-width: 5px 0 25px 0; }
+.bl { position: absolute; top: 62.5%; left: 0; right: 50%; bottom: 0; 
+    background: #0F9D58; border:solid #000; border-width: 5px 5px 0 0; }
+.br { position: absolute; top: 62.5%; left: 50%; right: 0; bottom: 0; 
+    background: #F4B400; border:solid #000; border-width: 5px 0 0 0;} 
+
+
+    

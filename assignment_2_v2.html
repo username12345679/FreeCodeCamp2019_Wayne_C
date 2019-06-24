@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<!--Meta Data Elements Go Here-->
+
+<head>
+    <!-- This line below here is going to print the title of the tab of the webpage which we are creating-->
+    <title> Assignment: 2 Survey Form by Wayne  </title>
+
+        <!-- CSS file is linked here in the next 3 lines-->
+    <link rel = "stylesheet"
+        type = "text/css"
+        href = "assignment_2.css" />
+</head>
+
+<!--Body stuff here-->
+<body>
+
+    <header> 
+        <div id="box-container">
+            <p id="description"> Welcome to Wayne's Free Code Camp Assignment 2 "Build a Survey Page"  </p>
+            
+        </div>
+    </header>
+
+    <main>
+        <h1 id="title"> Survey Form <hr>  </h1>
+
+        <p> Presented here on this page are different forms of survey questions using different HTML elements! <hr> </p>
+
+        <!--Top Left Hand Quadrant Area Question-->
+        <div class="tl">
+            <p> Questions asked here require user typing input of strings or numbers.</p>
+
+            <div id="form-outer">   <!-- ID form-outer from css-->
+
+                <form id="survey-form">
+                    <!-- question 1-->
+                    <div class="rowTab">
+                        <form id="survey-form">
+                        <div class="labels">
+                            <label id="name-label" for="name">* First Name followed by Last Name </label>
+                        </div>
+                        <div class="rightTab">
+                            <input autofocus type="text" name="name" id="name" class="input-field" placeholder=" First Name Last Name." required>
+                        </div>        
+                    </form>
+                    </div>
+
+                    <!-- question 2-->
+                    <div class="rowTab">
+                        <form id="survey-form">
+                        <div class="labels">
+                            <label id="email-label" for="email">* Email:  </label>
+                        </div>
+                        <div class="rightTab">
+                            <input autofocus type="email" name="email" id="email" class="input-field" placeholder=" Please enter your email address." required>
+                        </div>        
+                    </form>
+                    </div>                    
+
+                    <!--question 3-->
+                    <div class="rowTab">
+                        <form id="survey-form">
+                        <div class="labels">
+                            <label id="number-label" for="email">* Age: </label>
+                        </div>
+                        <div class="rightTab">
+                            <input autofocus type="number" name="age" id="number" min="1" max="150" class="input-field" placeholder="Age" required>
+                        </div>
+                        </form>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        
+        
+        <div class="tr">
+           
+            <p> Questions asked here require user using radio options and check boxes and dropdown selection.</p>
+
+            <!-- question 4-->
+            <!-- Drop Down Menu Here.-->
+
+            <div id="form-outer">
+                <form id="survey-form">
+                <div class="rowTab">
+                    <div class="labels"> 
+                            <label for="most-like">What do you like most about League of Legends? </label>                    
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="mostLike" class="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Its sense of accomplishment when winning.</option>
+                        <option value="projects">Playing with your friends.</option>
+                        <option value="community">Defeating your enemy.</option>
+                        <option value="openSource">Never ending journey of learning and developing your skill.</option>
+                        </select>
+                    </div>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 5-->
+            <!--Check box asking user to chose their answer. More than one can apply.-->
+            <div class="rowTab">
+                <form id="survey-form">
+                
+                    <div class="labels">
+                        <label for="preferences">What role in League of Legends do you like the best?<br>(Check all that apply): </label>
+                    </div>
+                    
+                    <div class="rightTab">
+                        <ul id="preferences" style="list-style: none;">
+
+                        <li class="checkbox">
+                            <label><input name="prefer" value="1" type="checkbox" class="userRatings">Top Lane</label>
+                        </li>
+
+                        <li class="checkbox">
+                            <label><input name="prefer" value="2" type="checkbox" class="userRatings">Jungle</label>
+                        </li>
+
+                        <li class="checkbox">
+                            <label><input name="prefer" value="3" type="checkbox" class="userRatings">MidLane</label>
+                        </li>
+                       
+                        <li class="checkbox">
+                            <label><input name="prefer" value="4" type="checkbox" class="userRatings">Bot Lane ADC</label>
+                        </li>
+
+                        <li class="checkbox">
+                            <label><input name="prefer" value="5" type="checkbox" class="userRatings">Bot Lane Support</label>
+                        </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        
+        <div class="bl">
+
+            <form id="survey-form">
+            <div class="rowTab">
+
+                <div class="labels">
+                    <label for="userRating">* How likely is that you would recommend League of Legends to a friend?</label>
+                </div>
+
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+
+                    <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                    
+                    </ul>
+                </div>
+            </div>
+            </form>
+        </div>
+
+        
+        <div class="br">
+            
+            <form id="survey-form">
+            <p> Here we ask user for if there are any recommendations on how to improve the website / game.</p>
+            <div id="form-outer">
+
+            <div class="rowTab">
+                
+                <div class="labels-center">
+                    <label for="comments">Any Comments or Suggestions?</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+            </div>
+            </form>
+        </div>
+    </main>
+</body>
