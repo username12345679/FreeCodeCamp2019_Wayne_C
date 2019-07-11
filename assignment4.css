@@ -1,0 +1,65 @@
+/** Global Styling Element **/
+
+html,body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;                    /*This influences the background color of the HTML website */
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;                               /*This controls all the line spacings for the entire webpage  */
+}
+
+#navbar{
+    position:fixed;
+    min-width: 290px;
+    top:0px;
+    left:0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    background-color: aqua;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    /*text-align: center;*/
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+#main-doc {                 /*main doc to show the right hand side of things  */
+    position: absolute;
+    margin-left: 310px;  /*This controls the padding from left side which controls the right side of the nav bar.  */
+    padding: 5px;
+    margin-bottom: 110px;
+    background-color:#ffffff;
+}
+
+section > article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    font-family: monospace;
+    display: block;
+    background-color: #333;
+    color: #ccc;
+}
+
+/* Media Query Things */
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+}

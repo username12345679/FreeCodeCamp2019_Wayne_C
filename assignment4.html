@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Assignment 4: Technical Documentation Page</title>
+
+    <!-- CSS Header things go here-->
+    <link rel = "stylesheet"
+    text="text/css"
+    href="assignment4.css"/>
+</head>
+
+<!-- Body Stuff Goes Here-->
+<body>
+
+    <nav id="navbar">
+
+        <header> Java Documentation</header>
+
+        <ul> 
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>                      <!--section 1-->
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li> <!--section 2-->
+            <li><a class="nav-link" href="#Hello_World">Hello World</a></li>                                <!--section 3-->
+            <li><a class="nav-link" href="#OOP">OOP</a></li>                      <!--section 4-->
+            <li><a class="nav-link" href="#Language_Basics">Language Basics</a></li>                        <!--section 5-->
+            <li><a class="nav-link" href="#Classes_And_Objects">Classes and Objects</a></li>                <!--section 6-->
+            <li><a class="nav-link" href="#Annotations">Annotations</a></li>                                <!--section 7-->
+            <li><a class="nav-link" href="#Interfaces_And_Inheritance">Interfaces And Inheritance</a></li>  <!--section 8-->
+            <li><a class="nav-link" href="#Numbers_And_Strings">Numbers And Strings</a></li>                <!--section 9-->
+            <li><a class="nav-link" href="#Generics">Generics</a></li>                                      <!--section 10-->
+            <li><a class="nav-link" href="#Packages">Packages</a></li>                                      <!--section 11-->
+            <li><a class="nav-link" href="#References">References</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">  <!--User Story#1: main element with "main-doc"-->
+
+        <section class="main-section" id="Introduction" >  <!-- section 1 -->
+            <header>Introduction</header>
+            <article>
+                <!--Bullet Points Talking about our documentation page.-->
+                <p>
+                Java is a general purpose programming language that is class-based, object orientated, 
+                and designed to have as few implementation dependencies as possible.
+
+                Java is widely used everywhere. It has been used in many industries from:
+                </p>
+                <ul>                                            
+                    <li>Banking</li>
+                    <li>Retail</li>
+                    <li>Information Technology</li>
+                    <li>Android Applications</li>
+                    <li>Financial Services</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="main-section" id="What_you_should_already_know">  <!-- section 2-->
+            <header>What you should already know</header>
+            <article>
+                <p>
+                    There are a few key points of the Java Language. We will just briefly touch upon each here.
+                </p>
+                <ul>
+                    <li>Hello World</li>
+                    <li>Object Orientated Programming Concepts</li>
+                    <li>Language Basics</li>
+                    <li>Classes and Objects</li>
+                    <li>Annotations</li>
+                    <li>Interfaces and Inheritance</li>
+                    <li>Numbers and Strings</li>
+                    <li>Generics</li>
+                    <li>Packages</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Hello_World">  <!-- section 3-->
+            
+            <header>Hello World</header>
+            
+            <article>
+            <p>
+                To get started with writing Java, open a text editor like Sublime Text or Visual Studio Code and write your first
+                "Hello World" Java Code. <br><br>
+
+                <code>
+                    First we need to create a file called HelloWorld.java. <br>
+                    In the file, we need to write the following: <br>
+                    System.out.println("Hello World");<br>
+                    Then we have to compile it with javac. Install JDK! <br>
+                    java HelloWorld.java<br>
+                </code>
+                <br>
+                Don't forget to compile it and then run the code with java Hello_World.java!!
+            </p>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="OOP">  <!-- section 4-->
+            <header>OOP</header>
+            <article>
+                <p>
+                    OOP or Object Orientated Programming is a key idea in Java. We are not going to go into detail here just 
+                    the key points.
+
+                    They are the following:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Abstraction</strong> - In Java, the concept of abstraction means simple things such as objects and classes.
+                    </li>
+                    <li>
+                        <strong>Encapsulation</strong> - In Java, this is about keeping fields within classes private, then providing access to them via public methods. This is 
+                        a protective barrier that keeps the data and code safe within the class itself.
+                    </li>
+                    <li>
+                        <strong>Inheritance</strong> - This lets programmers create new classes that share some of the attributes of existing classes. This lets us
+                        build on existing works without needing to re-create code each time we need to re-use code.</li>
+                    <li>
+                        <strong>polymorphism</strong> - This Java OOP concept lets programmers use the same word to mean different things given different contexts.
+                        One common form of polymorphism in Java is called method overloading. That's when the different meanings are dependent on the values of the supplied
+                        variables.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Language_Basics">  <!-- section 5-->
+            <header>Language Basics</header>
+            <article>
+                <p>
+                    There are four basic features of the Java Language:                    
+                </p>
+                <ul>
+                    <li><strong>Variables</strong> - Every programming language has its own set of rules and conventions for the kinds of names
+                    we are allowed to you. Variables are case-sensitive -- an unlimited length sequence of Unicode letters and digits, beginning with a letter.</li>
+                    <li><strong>Operators</strong></li>
+                    <li><strong>Expressions, Statements, and Blocks</strong></li>
+                    
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Classes_And_Objects">  <!--Section 6-->
+            <header>Classes And Objects</header>
+            <article>
+                <p>
+                    Here is example with sample code implementing the Bicycle class, to give an overview of how to declare a class. 
+                </p>
+                <ul>
+                    <!--Bullet Point 1-->
+                    <li>
+                        <strong>Classes</strong> <br>
+                        <code> public class Bicycle <br></code>
+                        <code>//the Bicycle class has three fields <br></code>
+                        <code> public int cadence;<br></code>
+                        <code> public int gear;<br></code>
+                        <code> public int speed;<br><br></code>
+
+                        <code>// The Bicycle class has one constructor<br></code>
+                        <code>public Bicycle(int startCadence, int startSpeed, int startGear) {<br> </code>
+                        <code>gear = startGear; <br></code>                            
+                        <code>cadence = startCadence; <br></code>
+                        <code>speed=startSpeed;<br></code>
+                        <code>} <br><br></code>
+
+                        <code><strong>the Bicycle class has four methods which we are listing out below:</strong> <br><br></code>
+                        <code> Method #1: <br></code>
+                        <code>public void setCadence(int newValue) { <br></code>
+                        <code>cadence = newValue; <br></code>
+                        <code>} <br></code>
+
+                        <code> Method #2: <br></code>
+                        <code>public void setGear(int newValue) { <br></code>
+                        <code>gear = newValue; <br> </code>
+                        <code>} <br></code>
+
+                        <code> Method #3: <br></code>
+                        <code>public void applyBrake(int decrement) { <br></code>
+                        <code>speed -= decrement; <br></code>
+                        <code>} <br></code>
+
+                        <code> Method #4: <br></code>
+                        <code>public void speedUp(int increment) { <br></code>
+                        <code>speed += increment; <br></code>
+                        <code> }<br></code>
+                    </li>
+
+                    <!--Bullet Point 2-->
+                    <li>
+                        <strong>Objects</strong> <br>
+                        <p>
+                            In a typical Java program, there are many Objects that can interact with invoking methods.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Interfaces_And_Inheritance">  <!--Section 7-->
+            <header>Interfaces And Inheritance</header>
+            <article>
+                <p>
+                    Interfaces and Interfaces
+                </p>
+            </article>
+
+
+        </section>
+
+        <section class="main-section" id="Annotations">  <!--Section 8-->
+            <header>Annotations</header>
+            
+            <article>
+                <p>
+                    Annotations, a form of metadata, provide data about a program that is not part of the program itself. 
+                    Annotations have no direct effect on the operation of the code they annotate. 
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Numbers_And_Strings"> <!--Section 9-->
+            <header>Numbers And Strings</header>
+            <article>
+                <p>
+                    In Java two key datatypes are Numbers and Strings. Mastery of the two are crucial. Number class is located in the package: <br> <code> java.lang</code>
+
+                    The String class are widely used in programming Java and are a sequences of characters. In the Java programming language, strings are objects.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Generics">   <!--Section 10-->
+            <header>Generics</header>
+            <article>
+                <p>
+                    Generics in Java. 
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Packages"> 
+            <header>Packages</header>
+            <article>
+                <p>
+                    Packages in Java.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="References" >
+            <header>References</header>
+            <article>
+                <ul>
+                    <li>All documentation can be found at: 
+                        <a 
+                        href="https://docs.oracle.com/javase/tutorial/index.html"
+                        target="blank">MDN
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+
+    
+    </main>    
+</body>
