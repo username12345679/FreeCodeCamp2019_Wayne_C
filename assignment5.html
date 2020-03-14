@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Assignment 5: Portfolio Landing Page </title>
+
+    <!-- CSS Header linking to our own css file called assignment5.css -->
+    <link 
+        rel="stylesheet"
+        href="assignment5.css" 
+    />
+
+    <!-- This allows us to use the icons for github icon. By referencing an online location-->
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"       
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+    />
+</head>
+
+<!-- Body Stuff Goes Here -->
+
+<!-- NAV Bar -->
+<nav id="navbar" class="nav">  <!-- Defined in the nav class in the css file.-->
+    <ul class="nav-list">
+        <li>
+            <a href="#welcome-section">About Me</a>  <!-- Link here will link to bottom-->
+        </li>
+        <li>
+            <a href="#projects">My Work</a>          <!-- This will link the #projects to later in the file.-->
+        </li>
+        <li>
+            <a href="#contact">How to Contact Me</a> <!-- This will link the #contract to later in the file.-->
+        </li>
+    </ul>
+</nav>
+
+<!-- END of NAV-->
+
+<!-- Start of Welcome -->
+
+<section id="welcome-section" class="welcome-section">  <!-- This links from welcome-section from the nav bar projects-->
+    <h1>Hey I am Wayne</h1>
+    <p>I am a beginning developer that is learning from Free Code Camp!</p>
+</section>
+
+<!-- End of the Welcome Section-->
+
+<!-- Start of the PROJECTS section-->
+
+<section id="projects" class="projects-section">   <!-- This links from projects from the nav bar projects.
+-->
+    <h2 class="projects-section-header">Hello World! Here is a sample of my portfolio.</h2>
+    <div class="projects-grid">        
+        
+        <!-- Project 1-->
+        <!-- Link to a project is here-->
+        <a 
+            href = "https://htmlpreview.github.io/?https://github.com/username12345679/FreeCodeCamp2019_Wayne_C/blob/username12345679-FreeCodeCamp_Tribute_Page-1/assignment1_user_story.html"
+            target = "_blank"
+            class = "project project-tile">
+           
+            <!--This is the image of the free code camp image.-->
+            <img 
+                class="project-image"
+                src="https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg"
+                alt="project" />
+
+            <p class = "project-title">  <!-- Project section should contain at least one element with class of project-tile to hold a project-->
+                <span class="code">&lt;</span>        <!-- This makes the < tag-->
+                Project 1: Tribute Page               <!-- This is the text in the box.-->
+                <span class="code">&#47;&gt;</span>   <!-- This makes the > tag-->
+            </p>
+        </a>
+
+        <!-- Project 2-->
+        <!--a tag is listing out the link-->
+        <a
+            href="https://htmlpreview.github.io/?https://github.com/username12345679/FreeCodeCamp2019_Wayne_C/blob/username12345679-assignment2-Survey-Form-1/assignment_2_v2.html"
+            target="_blank"
+            class="project project-tile"
+        >
+        <!-- img listing of the project-image-->
+        <img
+            class="project-image"
+            src="https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg"
+            alt="project"
+        />
+        <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 2: Survey Form
+            <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+
+      <!-- Project 3-->
+    <a
+        href="https://htmlpreview.github.io/?https://github.com/username12345679/FreeCodeCamp2019_Wayne_C/blob/username12345679-FreeCodeCamp_Assignment_3_Product_Landing_Page/assignment_3.html"
+        target="_blank"
+        class="project project-tile"
+    >
+      
+    <img
+        class="project-image"
+        src="https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg"
+        alt="project" 
+    />
+
+    <p class="project-title">
+        <span class="code">&lt;</span>
+        Project 3: Product Landing Page
+        <span class="code">&#47;&gt;</span>
+    </p>
+
+    <!-- Project 4-->
+    <a
+        href="https://htmlpreview.github.io/?https://github.com/username12345679/FreeCodeCamp2019_Wayne_C/blob/username12345679-FreeCodeCamp_Assignment_4_Technical_Documentation/assignment4.html"
+        target="_blank"
+        class="project project-file"
+    >
+
+    <img
+        class="project-image"
+        src="https://s3.amazonaws.com/freecodecamp/curriculum-diagram-full.jpg"
+        alt="project"
+    />
+
+    <p class="project-title">
+            <span class="code">&lt;</span>
+            Project 4: Technical Documentation
+            <span class="code">&#47;&gt;</span>
+    </p>
+    </div>
+</section>
+
+<!-- END PROJECTS SECTION-->
+
+<!-- START CONTACT SECTION -->
+
+<section id="contact" class="contact-section">  <!-- This comes from the nav bar linked from contact-->
+    <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>How do you like to contact me? </p>
+    </div>
+    <div class="contact-links">
+        <a
+        id="profile-link"
+        href="https://github.com/username12345679"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-github"></i> GitHub</a>
+    </div>
+
+</section>
+
+<!-- End of CONTACT SECTION -->
+
+<footer>
+    <p>
+        ** This is not a real portfolio page. All the projects shown here are not real and just
+        for educational purposes. Thank you for reading this far **
+    </p>
+
+    <p>
+        &copy; Created for 
+        <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp 
+            <i class="fab fa-free-code-camp"></i> </a>
+    </p>
+</footer>
+<!-- END FOOTER SECTION-->
+
